@@ -98,8 +98,8 @@ class Equilibrium:
                     if not polygons.intersect(
                             [self.primary_opoint[0], xpt[0]], # R1
                             [self.primary_opoint[1], xpt[1]], # Z1
-                            [p[0] for p in self.wall], # R2
-                            [p[1] for p in self.wall], # Z2
+                            [p[0] for p in wall], # R2
+                            [p[1] for p in wall], # Z2
                             closed1 = False,
                             closed2 = True):
                         # Line from primary O-point to this X-point does not intersect wall
